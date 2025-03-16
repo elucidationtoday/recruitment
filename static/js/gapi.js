@@ -19,8 +19,8 @@ function makeApiCall(type) {
 
 
 function initClient() {
-  //var API_KEY = 'AIzaSyBWrcPpx3wUpeXkGFMgJq4cHmPJVycSh3I';  // TODO: Update placeholder with desired API key.
-  var API_KEY = 'AIzaSyDMbdt7Uoul8ko96b5b2jPRdtMEB-J2mU8';
+  //var API_KEY = '';  // TODO: Update placeholder with desired API key.
+  var API_KEY = '';
   //var CLIENT_ID = '201361528906-hallvpkqj9us2k62ran3togstgitvf0j.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
   var CLIENT_ID = '525451585501-7airvefnftfr59vm36ag28kdf02mtakm.apps.googleusercontent.com';
   // TODO: Authorize using one of the following scopes:
