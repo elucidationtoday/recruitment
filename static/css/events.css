@@ -1,0 +1,198 @@
+.event-gallery{
+	background: #FDF7E8;
+	padding-bottom: 100px;
+}
+.galleries{
+	text-align: center;
+}
+.galleries .gallery-wrap{
+	display: inline-block;
+}
+.galleries .gallery-wrap .display-event{
+	padding: 10px 10px 50px 10px;
+	background: #FFF;
+}
+.galleries .gallery-wrap .display-event img{
+	border: 0.1px solid #111;
+}
+.galleries .image-container{
+	display: none;
+}
+
+.all-events{
+	background: #FDF7E8;
+	padding: 50px 0;
+}
+.all-events .container{
+	width: 80%;
+	margin: auto;
+}
+.all-events .events-title{
+	font-size: 32px;
+	padding: 20px 0;
+	margin-bottom: 10px;
+	color: #0B4F57;
+	font-weight: 700;
+}
+.all-events .events-details{
+	margin-left: 50px;
+}
+.all-events .events-sub-container{
+	display: flex;
+	align-items: top;
+}
+.all-events .events-showcase .image-container img{
+	max-height: 450px;
+}
+.all-events .events-details > div{
+	margin-bottom: 30px;
+}
+.all-events .events-details .download-brochure div a{
+	cursor: pointer;
+	color: #4a4a4a;
+}
+.all-events .events-details .registration-button div{
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 20px;
+	padding: 10px 30px;
+	background: #4a949f;
+	color: #FDF7E8;
+}
+.all-events .events-details .registration-button .closed{
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 20px;
+	padding: 10px 30px;
+	background: #EA526F;
+	color: #FDF7E8;
+}
+
+.event-item .events-details{
+}
+.event-item .events-details .columns{
+	text-align: left;
+}
+.event-item .events-details .column{
+	padding: 0 50px;
+}
+.event-item .events-details .desc-heading{
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: #111;
+}
+.event-item .events-details .desc-sub-title{
+	font-size: 20px;
+	font-weight: bold;
+	color: #4a949f;
+	margin: 20px 0;
+}
+.event-item .events-details .desc-sub-title > div{
+	font-size: 16px;
+	color: #EA526F;
+}
+.event-item .events-details .desc-sub-points{
+	font-size: 16px;
+}
+.event-item .events-details .desc-sub-points ul{
+	list-style: auto;
+}
+.event-item .events-details .desc-sub-points.highlights ul{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.event-item .events-details .desc-sub-points.highlights ul li{
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 2px solid #4a949f;
+}
+.event-item .events-details .desc-sub-points.highlights ul li:last-child{
+	border-right: none;
+}
+.event-item .events-details .desc-sub-points.highlights ul li div:nth-child(1){
+	font-weight: 700;
+	font-size: 28px;
+	color: #4a949f;
+}
+.event-item .events-details .desc-sub-points.highlights ul li div:nth-child(2){
+	font-size: 12px;
+	text-align: center;
+}
+.view-gallery{
+	width: 0%;
+	position: fixed;
+	height: 100%;
+	z-index: 99999;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.achievements{
+	background: #FDF7E8;
+}
+.description-text{
+	margin: 20px 0;
+}
+.action-buttons button{
+	outline: none;
+	border: 0;
+	border-radius: 5px;
+	background: #4a949f;
+	color: #FFF;
+	padding: 10px 25px;
+	cursor: pointer;
+}
+.action-buttons button:hover{
+	background: #0B4F57;
+}
+@media only screen and (min-width: 1024px){
+	.event-gallery{
+		background: linear-gradient(180deg, #4a949f 30%, #FDF7E8 70%);
+	}
+}
+@media only screen and (max-width: 1024px){
+	.galleries .gallery-wrap{
+		width: 40%;
+		margin: auto;
+	}
+}
+@media only screen and (max-width: 768px){
+	.have-space-top{
+		padding: 0;
+	}
+	.all-events .events-title{
+		font-size: 24px;
+		margin-left: 20px;
+	}
+	.event-item .events-details .column{
+		padding: 0 100px;
+	}
+	.all-events .events-sub-container{
+		display: block;
+	}
+	.all-events .events-title{
+		margin: 0;
+	}
+	.all-events .events-details{
+		margin: 0;
+	}
+	.event-item .events-details .desc-sub-points.highlights ul{
+		flex-wrap: wrap;
+	}
+	.event-item .events-details .desc-sub-points.highlights ul li div:nth-child(2){
+		text-align: left;
+	}
+	.event-item .events-details .desc-sub-points.highlights ul li{
+		border-right: 0;
+	}
+}
+@media only screen and (max-width: 500px){
+	.galleries .gallery-wrap{
+		width: 80%;
+		margin: auto;
+	}
+	.event-item .events-details .column{
+		padding: 0 20px;
+	}
+}

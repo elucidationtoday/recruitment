@@ -1,0 +1,58 @@
+	<div class="columns is-vcentered">
+		<div class="column is-4 is-offset-4 has-text-centered">
+			
+			<a class="social" href="https://www.instagram.com/elucidation_today/" alt="@elucidation_today">
+				<span class="icon">
+					<i class="fab fa-instagram fa-2x"></i>
+				</span>
+			</a>
+			<a class="social" href="mailto:contact@elucidationtoday.com" alt="contact@elucidationtoday.com">
+				<span class="icon">
+					<i class="far fa-envelope fa-2x"></i>
+				</span>
+			</a>
+			<a class="social" href="https://www.linkedin.com/company/elucidation-today" alt="linkedin">
+				<span class="icon">
+					<i class="fab fa-linkedin fa-2x"></i>
+				</span>
+			</a>
+		</div>
+	</div>
+	<div class="contact-information">
+		<div class="email-info">
+			<a href="mailto:contact@elucidationtoday.com">contact@elucidationtoday.com</a>
+			<span class="tooltip">
+				<i class="far fa-clone" style="cursor: pointer;" onmouseout="tooltip('tooltip_email')" onclick="copyText('contact@elucidationtoday.com','tooltip_email')"></i>
+				<span class="tooltiptext" id="tooltip_email">Copy to clipboard</span>
+			</span>
+		</div>
+		<!-- <div>•</div>
+		<div class="phone-info">
+			<a href="tel:01722730000">0172-2730000</a>
+			<span class="tooltip">
+				<i class="far fa-clone" onmouseout="tooltip('tooltip_phone')" onclick="copyText('01722730000','tooltip_phone')"></i>
+				<span class="tooltiptext" id="tooltip_phone">Copy to clipboard</span>
+			</span>
+		</div> -->
+		<div>•</div>
+		<div style="font-size: 12px;">Elucidation Today • A venture of A.R Services</div>
+	</div>
+	<script type="text/javascript">
+		function copyText(text, tooltip_id) {
+		  var copyText = text;
+		  temp_input = $('<input>').val(copyText).appendTo('body');
+		  temp_input.select();
+		  /* // for existing input element 
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999);
+		  */
+		  document.execCommand("copy");
+		  var tooltip = document.getElementById(tooltip_id);
+		  tooltip.innerHTML = "Copied";// + temp_input[0].value;
+		  $(temp_input).remove();
+		}
+		function tooltip(id) {
+		  var tooltip = document.getElementById(id);
+		  tooltip.innerHTML = "Copy to clipboard";
+		}
+	</script>

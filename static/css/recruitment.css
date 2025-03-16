@@ -1,0 +1,305 @@
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+
+.recruitment-head{
+	height: 90vh;
+	margin-top: 52px;
+}
+
+.recruitment-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.recruitment-body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.recruitment-buttons{
+	padding: 10px 70px;
+	background: #4a949f;
+	color: #FFF;
+	border: 1px solid #4a4a4a;
+	display: flex;
+	font-size: 20px;
+	z-index: 1;
+}
+.recruitment-buttons:hover{
+	background: #FFF;
+	color: #4a4a4a;
+	cursor: pointer;
+}
+
+.client, .candidate{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.client{
+	background: url('../images/recruitment/banner.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.candidate{
+	background: url('../images/recruitment/career.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.client .title, .candidate .title{
+	color: #FFF;
+	font-size: 42px;
+	text-align: center;
+	z-index: 1;
+	margin: 0 10px;
+	margin-bottom: 10px;
+}
+.candidate a{
+	text-decoration: none;
+	z-index: 1;
+}
+
+.popular-services{
+	padding: 50px 52px;
+	background: #FDF7E8;
+}
+
+.popular-services .container .head{
+	color: #4a4a4a;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.popular-services .container .content{
+	font-size: 14px;
+}
+
+.popular-services .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.popular-services .container.title{
+	font-size: 32px;
+	margin-bottom: 50px;
+	justify-content: left;
+}
+
+
+.popular-services .container .service{
+	background: #FFF;
+	padding: 30px 20px;
+	border-radius: 10px;
+ 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+ 	width: 300px;
+ 	height: 280px;
+}
+.popular-services .container > div > img {
+	height: 50px;
+}
+
+
+.clients-love-us{
+	padding: 50px 52px;
+	background: #FFF;
+}
+
+.clients-love-us .title{
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: 700;
+}
+
+.clients-love-us .container .head{
+	color: #4a4a4a;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.clients-love-us .container .content{
+	font-size: 14px;
+}
+
+.clients-love-us .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	flex-wrap: wrap;
+}
+
+.clients-love-us .container > div{
+	flex-basis: 25%;
+	text-align: center;
+}
+.clients-love-us .container .image {
+	background: #0B4F57;
+	border-radius: 50%;
+	padding: 30px;
+	display: inline-block;
+}
+.clients-love-us .container .image img{
+	height: 30px;
+	width: auto;
+	filter: invert(1);
+}
+
+.form-title{
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.staffing-process{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: #FDF7E8;
+}
+.staffing-process .title{
+	font-size: 32px;
+	text-align: center;
+	margin-top: 40px;
+}
+.staffing-process .process{
+	width: 70%;
+	margin: auto;
+}
+.staffing-process .process img{
+
+}
+.staffing-process .mobile{
+	display: none;
+}
+
+.overlay{
+	background: rgba(0, 0, 0, 0.4);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+#contact-candidate{
+	width: 80%;
+	margin: auto;
+	height: 100%;
+}
+
+.candidate-form{
+	position: fixed;
+	top: 0;
+	left: 50%;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-50%);
+	background: #000;
+}
+
+
+.clients{
+	margin-bottom: 40px;
+}
+.clients .title{
+	font-size: 32px;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+.clients-logos{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 60px;
+	justify-content: center;
+}
+
+.clients-logos div{
+	margin-bottom: 15px;
+}
+.clients-logos div img{
+	height: 40px;
+	width: auto;
+}
+
+
+@media (max-width: 1407px){
+	.popular-services .container{
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1000px){
+	.clients-love-us .container > div{
+		flex-basis: 40%;
+	}
+	.staffing-process .process{
+		width: 100%;
+	}
+	.client .title, .candidate .title{
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 768px){
+	.clients-love-us .container > div{
+		flex-basis: 100%;
+	}
+	.staffing-process .process{
+		width: 100%;
+	}
+	.staffing-process .process.mobile{
+		display: block;
+	}
+	.staffing-process .process.desktop{
+		display: none;
+	}
+	.recruitment-head{
+		margin-top: 0px;
+	}
+	.recruitment-body{
+		flex-direction: column;
+	}
+	.popular-services .container .service{
+	 	width: 100%;
+	 	height: auto;
+	}
+	.clients-logos{
+		white-space: nowrap;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		scrollbar-width: thin;
+		gap: 10px;
+		justify-content: flex-start;
+	}
+	.clients-logos::-webkit-scrollbar {
+		height: 8px;
+	}
+	.clients-logos > div{
+		min-width: 50px;
+		flex: none;
+	}
+}
